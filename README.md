@@ -19,10 +19,11 @@ $ xsltproc.exe dump_xml_structure_path.xslt book_catalog_02.xml |head
 /catalog/cd/title
 ...
 
-
-
+  
+  
+  
 From a xml file like this:
-
+  
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog>
   <cd id='1'>
@@ -50,7 +51,7 @@ From a xml file like this:
     <year>1982</year>
   </cd>
 </catalog>
-
+  
 You get this:
 /catalog
 /catalog/cd[@id=1]
@@ -63,5 +64,5 @@ You get this:
 /catalog/cd[@id=2]
 /catalog/cd/title
 ...
-
+  
 /catalog/cd/year 
