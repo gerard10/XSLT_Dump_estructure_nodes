@@ -71,7 +71,9 @@ You get this:
   
   
 I make 4 xslt files.
-dump_xml_structure_path.xslt   -- dump node like aboce
-dump_xml_structure_path_html.xslt  -- dumo like above into HTML
-dump_xml_structure_path_pipe_text.xslt -- dump like above and add a pipe and the value of the node at end of line
-dump_xml_structure_path_pipe_text_html.xslt -- dump like above and add a pipe and the value of the node at end of line into HTML version
+dump_xml_structure_path.xslt   -- dump node like aboce  
+dump_xml_structure_path_html.xslt  -- dumo like above into HTML  
+dump_xml_structure_path_pipe_text.xslt -- dump like above and add a pipe and the value of the node at end of line  
+dump_xml_structure_path_pipe_text_html.xslt -- dump like above and add a pipe and the value of the node at end of line into HTML version  
+  
+  
