@@ -1,0 +1,158 @@
+
+==================================
+el siguiente lo he sacado de aqui
+http://xmlstar.sourceforge.net/doc/UG/ch04.html
+
+medio7@MEDIO7 /cygdrive/c/Users/medio7/Downloads/maven_ebooks/mvnexbook-examples-1.0/simple-weather/src/main/resources
+$ xmlstarlet.exe sel -T -t -m '//*' -m 'ancestor-or-self::*' -v 'name()' -i 'not(position()=last())' -o . -b -b -n ejemplo_aemet_pozuelo.xml
+ejemplo_aemet_pozuelo.xml:1.104: Namespace prefix xsi for noNamespaceSchemaLocation on root is not defined
+n="1.0" xsi:noNamespaceSchemaLocation="https://www.aemet.es/xsd/localidades.xsd"
+                                                                               ^
+root
+root.origen
+root.origen.productor
+root.origen.web
+root.origen.enlace
+root.origen.language
+root.origen.copyright
+root.origen.nota_legal
+root.elaborado
+root.nombre
+root.provincia
+root.prediccion
+root.prediccion.dia
+root.prediccion.dia.prob_precipitacion
+root.prediccion.dia.prob_precipitacion
+root.prediccion.dia.prob_precipitacion
+root.prediccion.dia.prob_precipitacion
+root.prediccion.dia.prob_precipitacion
+root.prediccion.dia.prob_precipitacion
+root.prediccion.dia.prob_precipitacion
+
+...
+root.prediccion.dia.prob_precipitacion
+root.prediccion.dia.cota_nieve_prov
+root.prediccion.dia.estado_cielo
+root.prediccion.dia.viento
+root.prediccion.dia.viento.direccion
+root.prediccion.dia.viento.velocidad
+root.prediccion.dia.racha_max
+root.prediccion.dia.temperatura
+root.prediccion.dia.temperatura.maxima
+root.prediccion.dia.temperatura.minima
+root.prediccion.dia.sens_termica
+root.prediccion.dia.sens_termica.maxima
+root.prediccion.dia.sens_termica.minima
+root.prediccion.dia.humedad_relativa
+root.prediccion.dia.humedad_relativa.maxima
+root.prediccion.dia.humedad_relativa.minima
+root.prediccion.dia
+root.prediccion.dia.prob_precipitacion
+root.prediccion.dia.cota_nieve_prov
+root.prediccion.dia.estado_cielo
+root.prediccion.dia.viento
+root.prediccion.dia.viento.direccion
+root.prediccion.dia.viento.velocidad
+root.prediccion.dia.racha_max
+root.prediccion.dia.temperatura
+root.prediccion.dia.temperatura.maxima
+root.prediccion.dia.temperatura.minima
+root.prediccion.dia.sens_termica
+root.prediccion.dia.sens_termica.maxima
+root.prediccion.dia.sens_termica.minima
+root.prediccion.dia.humedad_relativa
+root.prediccion.dia.humedad_relativa.maxima
+root.prediccion.dia.humedad_relativa.minima
+
+
+
+
+================================
+el siguiente lo he sacado de aqui
+http://xmlstar.sourceforge.net/doc/UG/ch03s02.html
+
+
+medio7@MEDIO7 /cygdrive/c/Users/medio7/Downloads/maven_ebooks/mvnexbook-examples-1.0/simple-weather/src/main/resources
+$ xmlstarlet.exe el -v ejemplo_aemet_pozuelo.xml
+ejemplo_aemet_pozuelo.xml:1.104: Namespace prefix xsi for noNamespaceSchemaLocation on root is not defined
+n="1.0" xsi:noNamespaceSchemaLocation="https://www.aemet.es/xsd/localidades.xsd"
+                                                                               ^
+root[@id='28115' and @version='1.0' and @xsi:noNamespaceSchemaLocation='https://www.aemet.es/xsd/localidades.xsd']
+root/origen
+root/origen/productor
+root/origen/web
+root/origen/enlace
+root/origen/language
+root/origen/copyright
+root/origen/nota_legal
+root/elaborado
+root/nombre
+root/provincia
+root/prediccion
+root/prediccion/dia[@fecha='2022-05-30']
+root/prediccion/dia/prob_precipitacion[@periodo='00-24']
+root/prediccion/dia/prob_precipitacion[@periodo='00-12']
+root/prediccion/dia/prob_precipitacion[@periodo='12-24']
+root/prediccion/dia/prob_precipitacion[@periodo='00-06']
+root/prediccion/dia/prob_precipitacion[@periodo='06-12']
+root/prediccion/dia/prob_precipitacion[@periodo='12-18']
+root/prediccion/dia/prob_precipitacion[@periodo='18-24']
+root/prediccion/dia/cota_nieve_prov[@periodo='00-24']
+root/prediccion/dia/cota_nieve_prov[@periodo='00-12']
+root/prediccion/dia/cota_nieve_prov[@periodo='12-24']
+root/prediccion/dia/cota_nieve_prov[@periodo='00-06']
+root/prediccion/dia/cota_nieve_prov[@periodo='06-12']
+root/prediccion/dia/cota_nieve_prov[@periodo='12-18']
+root/prediccion/dia/cota_nieve_prov[@periodo='18-24']
+root/prediccion/dia/estado_cielo[@periodo='00-24' and @descripcion='Nubes altas']
+root/prediccion/dia/estado_cielo[@periodo='00-12' and @descripcion='Poco nuboso']
+root/prediccion/dia/estado_cielo[@periodo='12-24' and @descripcion='Nubes altas']
+root/prediccion/dia/estado_cielo[@periodo='00-06' and @descripcion='Poco nuboso']
+root/prediccion/dia/estado_cielo[@periodo='06-12' and @descripcion='Poco nuboso']
+root/prediccion/dia/estado_cielo[@periodo='12-18' and @descripcion='Nubes altas']
+root/prediccion/dia/estado_cielo[@periodo='18-24' and @descripcion='Nubes altas']
+root/prediccion/dia/viento[@periodo='00-24']
+root/prediccion/dia/viento/direccion
+root/prediccion/dia/viento/velocidad
+root/prediccion/dia/viento[@periodo='00-12']
+root/prediccion/dia/viento/direccion
+root/prediccion/dia/viento/velocidad
+root/prediccion/dia/viento[@periodo='12-24']
+root/prediccion/dia/viento/direccion
+root/prediccion/dia/viento/velocidad
+root/prediccion/dia/viento[@periodo='00-06']
+root/prediccion/dia/viento/direccion
+root/prediccion/dia/viento/velocidad
+root/prediccion/dia/viento[@periodo='06-12']
+root/prediccion/dia/viento/direccion
+root/prediccion/dia/viento/velocidad
+root/prediccion/dia/viento[@periodo='12-18']
+root/prediccion/dia/viento/direccion
+root/prediccion/dia/viento/velocidad
+
+..
+root/prediccion/dia/temperatura/minima
+root/prediccion/dia/sens_termica
+root/prediccion/dia/sens_termica/maxima
+root/prediccion/dia/sens_termica/minima
+root/prediccion/dia/humedad_relativa
+root/prediccion/dia/humedad_relativa/maxima
+root/prediccion/dia/humedad_relativa/minima
+root/prediccion/dia[@fecha='2022-06-05']
+root/prediccion/dia/prob_precipitacion
+root/prediccion/dia/cota_nieve_prov
+root/prediccion/dia/estado_cielo[@descripcion='Poco nuboso']
+root/prediccion/dia/viento
+root/prediccion/dia/viento/direccion
+root/prediccion/dia/viento/velocidad
+root/prediccion/dia/racha_max
+root/prediccion/dia/temperatura
+root/prediccion/dia/temperatura/maxima
+root/prediccion/dia/temperatura/minima
+root/prediccion/dia/sens_termica
+root/prediccion/dia/sens_termica/maxima
+root/prediccion/dia/sens_termica/minima
+root/prediccion/dia/humedad_relativa
+root/prediccion/dia/humedad_relativa/maxima
+root/prediccion/dia/humedad_relativa/minima
+
