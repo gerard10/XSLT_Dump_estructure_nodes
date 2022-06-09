@@ -51,6 +51,7 @@ From a xml file like this:
     <year>1982</year>  
   </cd>  
 </catalog>  
+   
     
 You get this:  
 /catalog  
